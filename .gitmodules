@@ -1,0 +1,3 @@
+[submodule "react-front-end"]
+	path = react-front-end
+	url = https://github.com/adbose/react-todo-app-front-end.git
