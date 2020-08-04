@@ -37,7 +37,7 @@ app.post('/todos', (req, res) => {
     res.send(todos);
 })
 
-app.post('todos/delete', (req, res) => {
+app.post('/todos/delete', (req, res) => {
     const { text } = req.body;
     todos = todos.filter(todo => todo.text !== text);
     // deletes by updating todos by excluding the todo with
@@ -45,7 +45,7 @@ app.post('todos/delete', (req, res) => {
     res.send(todos);
 })
 
-app.post('todos/complete', (req, res) => {
+app.post('/todos/complete', (req, res) => {
     const { text } = req.body;
     todos.forEach(todo => {
         if (todo.text === text) {
